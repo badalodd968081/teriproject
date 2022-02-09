@@ -11,9 +11,11 @@
             @foreach($posts as $post)
             <div class="col-md-4">
                 <div class="card">
-                    <a href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}"><img
+                    <a href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}">
+                        <img
                             src="{{asset('imgs/thumb/'.$post->thumb)}}" class="card-img-top"
-                            alt="{{$post->title}}" /></a>
+                            alt="{{$post->title}}" />
+                        </a>
                     <div class="card-body">
                         <h5 class="card-title"><a
                                 href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}">{{$post->title}}</a>

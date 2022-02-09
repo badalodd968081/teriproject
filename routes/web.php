@@ -38,6 +38,7 @@ Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
 // Post
 Route::get('admin/user',[AdminController::class,'users']);
 Route::get('admin/user/delete/{id}',[AdminController::class,'delete_user']);
+ 
 // Comment
 Route::get('admin/comment',[AdminController::class,'comments']);
 Route::get('admin/comment/delete/{id}',[AdminController::class,'delete_comment']);
@@ -47,6 +48,9 @@ Route::resource('admin/category',CategoryController::class);
 // Posts
 Route::get('admin/post/{id}/delete',[PostController::class,'destroy']);
 Route::resource('admin/post',PostController::class);
+// midea
+Route::get('admin/midea/{id}/delete',[PostController::class,'destroy']);
+Route::resource('admin/midea',PostController::class);
 // Settings
 Route::get('/admin/setting',[SettingController::class,'index']);
 Route::post('/admin/setting',[SettingController::class,'save_settings']);
