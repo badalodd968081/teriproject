@@ -15,7 +15,7 @@
           <!-- DataTables Example -->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-table"></i> <h1>Add Media</h1>
+              <i class="fas fa-table"></i> <h1>Hello</h1>
               <a href="{{url('admin/midea')}}" class="float-right btn btn-sm btn-dark">All Data</a>
             </div>
             <div class="card-body">
